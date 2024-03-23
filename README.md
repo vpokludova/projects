@@ -13,3 +13,8 @@ Welcome to my projects repository! This repository contains various projects I'v
 - Description: Dynamically generates timetables for Prague trams in a memory efficient way.
 - Technologies: C++, WxWidgets
 - Link: [Timetables Generator](https://github.com/vpokludova/projects/tree/main/timetables_generation)
+
+3. Library Management System
+- Description: Consists of features such as member and librarian logins, book searches, borrowing and returning books, and profile management.
+- Technologies: Java, MySQL, Java Database Connectivity Framework
+- Link: [Library Management System](https://github.com/vpokludova/projects/tree/main/library_management_system)
