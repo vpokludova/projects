@@ -18,3 +18,8 @@ Welcome to my projects repository! This repository contains various projects I'v
 - Description: Consists of features such as member and librarian logins, book searches, borrowing and returning books, and profile management.
 - Technologies: Java, MySQL, Java Database Connectivity Framework
 - Link: [Library Management System](https://github.com/vpokludova/projects/tree/main/library_management_system)
+
+4. EU Fiscal Analysis
+- Description: A thorough analysis of government finances across EU countries, with a focus on addressing specific inquiries.
+- Technologies: Python, NumPy, Pandas, Matplotlib
+- Link [EU Fiscal Analysis](https://github.com/vpokludova/projects/tree/main/eu_fiscal_analysis)

@@ -150,6 +150,15 @@ Observations:
 
     - Latvia shows a negative correlation, suggesting that GDP growth might move in the opposite direction to fiscal balance changes.
 
+## Notes
+
+- The main objective of this project is to conduct a thorough analysis of government finances across EU countries, with a focus on addressing specific inquiries.
+
+- Within the /code directory, each Python file corresponds to a distinct section within this document and addresses a particular question pertaining to fiscal analysis.
+
+- The project extensively utilizes technologies such as NumPy, Pandas, and Matplotlib.
+
+- All datasets utilized in this analysis are sourced from [Eurostat](https://ec.europa.eu/eurostat/web/main/data/database)
 
 
 
