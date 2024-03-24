@@ -8,7 +8,7 @@
 
 3. [Correlation between deficit/surplus and GDP growth rates](#correlation-between-deficitsurplus-and-gdp-growth-rate)
 
-4. [Notes on the code]()
+4. [Notes](#notes)
 
 ## Long term trends
 
