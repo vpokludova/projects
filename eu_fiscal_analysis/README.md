@@ -18,7 +18,7 @@ What are long-term trends in government deficit/surplus for EU countries?
 
     - So, when looking at deficit/surplus, it's good to have a positive observed value rather than a negative one
 
-- The dataset used was [Government deficit/surplus, debt, and associated data" from Eurostat](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en)
+- The dataset used was [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en)
 
 **Visualization of the dataset:**
 
@@ -102,6 +102,8 @@ How do fiscal performances among EU countries?
 
 - To measure this countries are ranked based on average deficit/surplus as a percentage of GDP
 
+- Datasets used were [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en) and [Gross domestic product at market prices](https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma)
+
 ![Average deficit/surplus as percentage of GDP Visualization](images/comparing_gdp_percentage_deficitsurplus.jpg)
 
 - The calculation for this is done by calculating the deficit/surplus as a percentage of GDP for each year for each country:
@@ -115,6 +117,8 @@ How do fiscal performances among EU countries?
 From the graph, one can easily observe that the only countries with a positive average are Denmark and Luxembourg while the remaining countries have negative averages. Spain, France, and Italy have the worst averages.
 
 ## Correlation between deficit/surplus and GDP growth rate
+
+- Datasets used were [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en) and [Real GDP growth rate - volume](https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma)
 
 ![GDP growth rate per country visualization](images/correlation_gdp_growth_rate.jpg)
 
