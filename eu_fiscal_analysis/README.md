@@ -8,6 +8,8 @@
 
 3. [Correlation between deficit/surplus and GDP growth rates](#correlation-between-deficitsurplus-and-gdp-growth-rate)
 
+4. [Clustering countries using various features and methods](#clustering-countries-based-on-deficitsurplus-gdp-inflation-rate-unemployment-rate)
+
 4. [Notes](#notes)
 
 ## Long term trends
@@ -153,6 +155,90 @@ Observations:
     - Poland has the strongest positive correlation, which implies a more pronounced relationship between fiscal balance and economic growth.
 
     - Latvia shows a negative correlation, suggesting that GDP growth might move in the opposite direction to fiscal balance changes.
+
+## Clustering countries based on deficit/surplus, gdp, inflation rate, unemployment rate
+
+**Clustering methods**
+
+1. The first method calculated mean, standard deviation, min, and max for each feature and used the calculated values as features for clustering.
+
+    - Example: 
+    Country_A has observed values [2, 3, 5, 6] for gdp for years [2012, 2013, 2014, 2015] respectively. This would turn into column, value pairs gdp_mean=4, gdp_stddev=1.83, gdp_min=2, gdp_max=6. 
+
+2. The second method expanded all instances of values for a specific features and used all of them as features for clustering.
+
+    - Example:
+    Country_A with the same observed values as above would turn into column, value pairs gdp_2012=2, gdp_2013=3, gdp_2014=5, gdp_2015=6
+
+- Both methods then used *KMeans* from *sklearn.cluster* 
+
+**Number of clusters**
+
+- I implemented a method which uses the Elbow Method and Silhouette Method to help visualize which number of clusters to choose. 
+
+    - The Elbow Method determines the optimal number of clusters by identifying the point where adding more clusters yields diminishing returns in terms of reducing the within-cluster sum of squares (WCSS).
+
+    - The Silhouette Method assesses the optimal number of clusters by measuring how similar each data point is to its own cluster compared to other clusters, aiming for the highest average silhouette score.
+
+- I ran the visualization for each clustering method and found that the best looking number for method 1 was 4 while the best number for method 2 was 3.
+
+    - Method 1 visualization:
+
+    ![Method 1 optimal clusters visualization](images/method1_optimal_clusters.jpg)
+
+    - Method 2 visualization:
+
+    ![Method 2 optimal clusters visualization](images/method2_optimal_clusters.jpg)
+
+    - Choosing number of clusters from the graphs:
+
+        - For the Elbow Method, choose the number of clusters at the point where the graph's line angle changes most abruptly, resembling an elbow. For the Silhouette Method, select the number of clusters that corresponds to the highest silhouette score, indicating optimal separation and cohesion.
+
+        - I tried to balance results of both graphs when choosing number of clusters
+
+**Results and visualization**
+
+Results from both methods:
+
+    Clusters from method 1:
+    Countries in Cluster 0:
+    Austria, Belgium, Denmark, Finland, Ireland, Luxembourg, Malta, Netherlands, Sweden, Slovenia
+
+    Countries in Cluster 1:
+    Cyprus, Greece, Spain, Croatia, Portugal
+
+    Countries in Cluster 2:
+    Germany, France, Italy
+
+    Countries in Cluster 3:
+    Bulgaria, Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, Romania, Slovakia
+
+    Clusters from method 2:
+    Countries in Cluster 0:
+    Germany
+
+    Countries in Cluster 1:
+    Austria, Belgium, Bulgaria, Cyprus, Czech Republic, Denmark, Estonia, Finland, Croatia, Hungary, Ireland, Lithuania, Luxembourg, Latvia, Malta, Netherlands, Poland, Portugal, Romania, Sweden, Slovenia, Slovakia
+
+    Countries in Cluster 2:
+    Greece, Spain, France
+
+Visualization:
+
+- PCA was used to lower dimensionality of the data to be able to plot it easier. 
+
+    - Principal Component Analysis (PCA) reduces the dimensionality of data by transforming it into a new set of variables, the principal components, which are ordered by the amount of variance they capture.
+
+- Clusters created using method 1:
+
+![Method 1 clusters](images/clusters_method1.jpg)
+
+- Clusters created using method 2:
+
+![Method 2 clusters](images/clusters_method2.jpg)
+
+*NOTE*: A few countries aren't included because the datasets had incomplete data for them.
+
 
 ## Notes
 
