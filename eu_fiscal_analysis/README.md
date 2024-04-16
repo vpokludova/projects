@@ -12,29 +12,22 @@
 
 4. [Notes](#notes)
 
-## Long term trends
+## Long term trends of deficit/surplus
 
-What are long-term trends in government deficit/surplus for EU countries?
+For background: *Deficit/Surplus = Government Revenue - Government Expenditure* 
 
-- For background: *Deficit/Surplus = Government Revenue - Government Expenditure*
+- For units of measure, the dataset offers million euro, million units of national currency, and percentage of GDP, and I chose million euro, so that results were easily comparable.
 
-    - So, when looking at deficit/surplus, it's good to have a positive observed value rather than a negative one
+Therefore, when looking at deficit/surplus, a positive value implies that the government is doing well, while negative doesn't.
 
-- The dataset used was [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en)
+The dataset used for this part was: [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en)
 
-**Visualization of the dataset:**
-
-![Deficit/Surplus Dataset visualization](images/long-term-trends-big-dataset-visual.jpg)
-
-Observations:
-
-- Most countries tend to have a deficit/surplus close to zero
-
-- In 2020, a lot of EU countries had much worse deficit/surplus than in other years and most of them seem to be improving since then, but the rate of improvement seems to be varied
 
 **Comparing standard deviation of deficit/surplus among EU countries:**
 
 ![Standard Deviations of Deficit/Surplus Visualization](images/long_term_trends_stddev.jpg)
+
+Standard deviation for each country was calculated as the standard deviation over all observed values of deficit/surplus in million euros from 2014 to 2022.
 
 High standard deviation suggests that the deficit/surplus values fluctuate widely around the mean. It also suggests greater uncertainty, risk, and unpredictability with the financial situation of the country. 
 
@@ -42,13 +35,25 @@ On the other hand, low standard deviation suggests less variability, indicates s
 
 Observations:
 
-- Germany, Italy, and France have higher much higher standard deviations than the other countries. 
+- Germany, Italy, and France have much higher standard deviations than the other countries. 
+
+    - These countries have some of the largest economies in the EU which also means that they are some of the most complex. This, in turn, might mean that they are some of the most sensitive which might be one of the reasons for more volatility in government finances.
+
+    - Germany tends to have a more conservative approach to government spending, but the migrant crisis and COVID pandemic caused them to greatly increase spending.
+
+    - France and Italy have historically had higher levels of public debt and often used government money to combat a stagnant economy, which might be one of the causes of fluctuation.
 
 - Slovenia, Bulgaria, Slovakia, Croatia, Luxembourg, Lithuania, Latvia, Cyprus, Malta, and Estonia all seem to have a more stable economy
+
+    - All of these countries have smaller, more contained economies than other countries in the EU which could result in less volatility in revenue and expenditure.
+
+    - Smaller EU countreis also often benefit from EU funds that are aimed at promoting structural development. These can provide a stable source of economic support and can reduce the need for drastic changes in fiscal policies.
 
 **Comparing mean of deficit/surplus among EU countries:**
 
 ![Mean of Deficit/Surplus Visualization](images/long_term_trends_mean.jpg)
+
+For the same values as standard deviation, the mean deficit/surplus was calculated for each country.
 
 Countries with more robust and resilient economies tend to report a mean deficit/surplus greater than zero, reflecting a surplus in their fiscal balances, whereas nations with a negative mean often face economic challenges that may indicate a deficit, potentially stemming from factors such as increased government spending, lower tax revenues, or broader macroeconomic issues.
 
@@ -56,15 +61,35 @@ Observations:
 
 - Countries with a really low mean are France, Italy, and Spain
 
+    - France, Italy, and Spain are known to have relatively high public debt levels compaired to other EU countries.
+
 - Countries with a mean that's definitely above zero are Denmark and Louxembourg
 
+    - Both countries use strong economic managment to carefully monitor and plan use of public finances which often results in overall surpluses.
+
+    - Denmark and Luxembourg also have high taxes which contributes signigicantly to government income.
+
 - Countries with a mean close to zero are Lithuania, Cyprus, Sweden, Malta, and Estonia
+
+    - Sweden has a diverse economy which brings in money from industrial, technology, and service sectors, contributing to stable revenue streams.
+
+    - Estonia's performance can partially be accounted for by its tech-driven economy.
+
+    - Malta, Lithuania, and Cyprus have all recently grown their economy through focus on tourism and financial services.
 
 **Combining mean and standard deviation of deficit/surplus to rank EU countries:**
 
 ![Combined standard deviation and mean ranking visualization](images/long_term_trends_combined_rank.jpg)
 
-Scoring was done in a way that benifited countries with high means and low standard deviations. Therefore, countries with a lower score are better, rank-wise.
+I wanted to find a combined ranking of the countries using both standard deviation and mean of deficit/surplus, so I came up with a simple ranking that penalized high standard deviation, praised low standard deviaiton, penalized low mean, and praised high mean. This gave each country a score in a rough range of [0,2], where the lower, the better, indicating more stable, positive finances.
+
+Calculating combined ranking:
+
+- Normalize mean and standard deviation
+
+- Score = (1 - normalized mean) + normalized mean
+
+Therefore, lower scores are better.
 
 Top 5 (from the top):
 
@@ -98,13 +123,13 @@ Using the linear regression function from the SciPy Stats package, an analysis w
 
 ![Countries with decreasing deficit/surplus visualization](images/long_term_trends_decreasing_slope.jpg)
 
+From the R-squared values it's quite obvious that none of countries' data follows a linear trend, therefore, this analysis doesn't really tell us much about fiscal trends in EU countries, except that they have a more complex relationship than a simple linear one.
+
 ## Comparison using GDP
 
-How do fiscal performances among EU countries?
+Countries are ranked based on average deficit/surplus as a percentage of GDP
 
-- To measure this countries are ranked based on average deficit/surplus as a percentage of GDP
-
-- Datasets used were [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en) and [Gross domestic product at market prices](https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma)
+Datasets used were [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en) and [Gross domestic product at market prices](https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma)
 
 ![Average deficit/surplus as percentage of GDP Visualization](images/comparing_gdp_percentage_deficitsurplus.jpg)
 
@@ -118,13 +143,16 @@ How do fiscal performances among EU countries?
 
 From the graph, one can easily observe that the only countries with a positive average are Denmark and Luxembourg while the remaining countries have negative averages. Spain, France, and Italy have the worst averages.
 
+This is a similar result to the one observed when looking at standard deviation and mean of deficit/surplus of EU countries.
+
 ## Correlation between deficit/surplus and GDP growth rate
 
 - Datasets used were [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en) and [Real GDP growth rate - volume](https://ec.europa.eu/eurostat/databrowser/view/tec00115/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma)
 
+
 ![GDP growth rate per country visualization](images/correlation_gdp_growth_rate.jpg)
 
-From this graph alone, one can come to the following conclusions:
+We can use the above graph to make the following conclusions about GDP growth rate over time for each EU country:
 
 - Synchronous movement
 
@@ -140,7 +168,7 @@ From this graph alone, one can come to the following conclusions:
 
 ![Correlation between GDP growth rate deficit/surplus visualization](images/correlation.jpg)
 
-Observations:
+Observations for correlation between GDP grown rate and deficit/surplus:
 
 - Diverse correlation values
 
@@ -152,15 +180,18 @@ Observations:
 
 - Strongest and weakest correlations
 
-    - Poland has the strongest positive correlation, which implies a more pronounced relationship between fiscal balance and economic growth.
+    - Poland has the strongest positive correlation, which implies a more pronounced relationship between fiscal balance and economic growth. A correlation coefficient of 0.71 implies strong correlation.
 
-    - Latvia shows a negative correlation, suggesting that GDP growth might move in the opposite direction to fiscal balance changes.
+    - Latvia shows a negative correlation, suggesting that GDP growth might move in the opposite direction to fiscal balance changes. Although Latvia has the lowest correlation coefficient of -0.18, it isn't actually that low and only implies moderate correlation.
 
 ## Clustering countries based on deficit/surplus, gdp, inflation rate, unemployment rate
 
+Datasets used were: [Government deficit/surplus, debt, and associated data](https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1__custom_10088085/default/table?lang=en)
+, [Gross domestic product at market prices](https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en&category=t_na10.t_nama10.t_nama_10_ma), [HICP - inflation rate](https://ec.europa.eu/eurostat/databrowser/view/tec00118/default/table?lang=en), and [Total unemployment rate](https://ec.europa.eu/eurostat/databrowser/view/tps00203/default/table?lang=en)
+
 **Clustering methods**
 
-1. The first method calculated mean, standard deviation, min, and max for each feature and used the calculated values as features for clustering.
+1. The first method calculated mean, standard deviation, min, and max were calculated for each feature and used for clustering.
 
     - Example: 
     Country_A has observed values [2, 3, 5, 6] for gdp for years [2012, 2013, 2014, 2015] respectively. This would turn into column, value pairs gdp_mean=4, gdp_stddev=1.83, gdp_min=2, gdp_max=6. 
@@ -180,8 +211,6 @@ Observations:
 
     - The Silhouette Method assesses the optimal number of clusters by measuring how similar each data point is to its own cluster compared to other clusters, aiming for the highest average silhouette score.
 
-- I ran the visualization for each clustering method and found that the best looking number for method 1 was 4 while the best number for method 2 was 3.
-
     - Method 1 visualization:
 
     ![Method 1 optimal clusters visualization](images/method1_optimal_clusters.jpg)
@@ -192,35 +221,43 @@ Observations:
 
     - Choosing number of clusters from the graphs:
 
-        - For the Elbow Method, choose the number of clusters at the point where the graph's line angle changes most abruptly, resembling an elbow. For the Silhouette Method, select the number of clusters that corresponds to the highest silhouette score, indicating optimal separation and cohesion.
+        - For the Elbow Method, one should choose the number of clusters at the point where the graph's line angle changes most abruptly, resembling an elbow. For the Silhouette Method, one should select the number of clusters that corresponds to the highest silhouette score, indicating optimal separation and cohesion.
 
-        - I tried to balance results of both graphs when choosing number of clusters
+        - I tried to balance results of both graphs when choosing number of clusters and deduced that the best number of clusters for method 1 is 6 and for method 2 is 3.
 
 **Results and visualization**
 
 Results from both methods:
 
-    Clusters from method 1:
-    Countries in Cluster 0:
-    Austria, Belgium, Denmark, Finland, Ireland, Luxembourg, Malta, Netherlands, Sweden, Slovenia
+    CLUSTERS FROM METHOD 1:
 
-    Countries in Cluster 1:
-    Cyprus, Greece, Spain, Croatia, Portugal
+    Cluster 0:
+    Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, Romania
 
-    Countries in Cluster 2:
-    Germany, France, Italy
+    Cluster 1:
+    France, Italy
 
-    Countries in Cluster 3:
-    Bulgaria, Czech Republic, Estonia, Hungary, Lithuania, Latvia, Poland, Romania, Slovakia
+    Cluster 2:
+    Bulgaria, Cyprus, Croatia, Ireland, Portugal, Slovenia, Slovakia
 
-    Clusters from method 2:
-    Countries in Cluster 0:
+    Cluster 3:
     Germany
 
-    Countries in Cluster 1:
+    Cluster 4:
+    Austria, Belgium, Denmark, Finland, Luxembourg, Malta, Netherlands, Sweden
+
+    Cluster 5:
+    Greece, Spain
+
+    CLUSTERS FROM METHOD 2:
+
+    Cluster 0:
+    Germany
+
+    Cluster 1:
     Austria, Belgium, Bulgaria, Cyprus, Czech Republic, Denmark, Estonia, Finland, Croatia, Hungary, Ireland, Lithuania, Luxembourg, Latvia, Malta, Netherlands, Poland, Portugal, Romania, Sweden, Slovenia, Slovakia
 
-    Countries in Cluster 2:
+    Cluster 2:
     Greece, Spain, France
 
 Visualization:
