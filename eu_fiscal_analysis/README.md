@@ -81,13 +81,13 @@ Observations:
 
 ![Combined standard deviation and mean ranking visualization](images/long_term_trends_combined_rank.jpg)
 
-I wanted to find a combined ranking of the countries using both standard deviation and mean of deficit/surplus, so I came up with a simple ranking that penalized high standard deviation, praised low standard deviaiton, penalized low mean, and praised high mean. This gave each country a score in a rough range of [0,2], where the lower, the better, indicating more stable, positive finances.
+I wanted to find a combined ranking of the countries using both standard deviation and mean of deficit/surplus, so I came up with a simple ranking that penalized high standard deviation, recognized low standard deviaiton, penalized low mean, and recognized high mean. This gave each country a score in a rough range of [0,2], where the lower, the better, indicating more stable, positive finances.
 
 Calculating combined ranking:
 
 - Normalize mean and standard deviation
 
-- Score = (1 - normalized mean) + normalized mean
+- Score = (1 - normalized mean) + normalized standard deviation
 
 Therefore, lower scores are better.
 
