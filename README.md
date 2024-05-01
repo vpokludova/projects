@@ -23,3 +23,8 @@ Welcome to my projects repository! This repository contains various projects I'v
 - Description: A thorough analysis of government finances across EU countries, with a focus on addressing specific inquiries.
 - Technologies: Python, NumPy, Pandas, Matplotlib
 - Link [EU Fiscal Analysis](https://github.com/vpokludova/projects/tree/main/eu_fiscal_analysis)
+
+5. Basic Textfile Indexer
+- Description: Builds an inverted index from text files in a directory, allowing users to efficiently search for and locate specific string queries and their line numbers.
+- Technologies: Kotlin
+- Link [Text Indexer](https://github.com/vpokludova/projects/tree/main/text_indexer)
