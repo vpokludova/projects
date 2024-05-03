@@ -1,4 +1,4 @@
-# Kotlin Code Evaluator
+# Code Evaluator
 
 ## Overview
 
