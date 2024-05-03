@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Kotlin Code Evaluator is a command-line application designed to analyze Kotlin and Java source files in a specified 
+The Code Evaluator is a command-line application designed to analyze Kotlin and Java source files in a specified 
 directory. The application evaluates the complexity of methods within the source files and checks if the method names 
 adhere to camelCase naming conventions.
 
@@ -22,7 +22,7 @@ Once the application is running, follow the on-screen prompts to analyze specifi
 
 ## Example Input and Output
 
-This section illustrates a typical interaction with the Kotlin Code Evaluator when it is run with a specified directory containing Kotlin or Java files. The process demonstrates how users can input commands, and it displays the corresponding outputs based on the complexity analysis and style checking of the provided code files.
+This section illustrates a typical interaction with the Code Evaluator when it is run with a specified directory containing Kotlin or Java files. The process demonstrates how users can input commands, and it displays the corresponding outputs based on the complexity analysis and style checking of the provided code files.
 
     Directory set to: src/main/resources/default_directory
     Please provide a filename. Enter 'default' to use the default Kotlin file or 'QUIT' to quit.
