@@ -28,3 +28,9 @@ Welcome to my projects repository! This repository contains various projects I'v
 - Description: Builds an inverted index from text files in a directory, allowing users to efficiently search for and locate specific string queries and their line numbers.
 - Technologies: Kotlin
 - Link [Text Indexer](https://github.com/vpokludova/projects/tree/main/text_indexer)
+
+6. Code Evaluator
+- Description: Evaluates the complexity of methods within the specified Java or Kotlin source files and checks if the method names 
+adhere to camelCase naming conventions.
+- Technologies: Kotlin, JavaParser
+- Link [Code Evaluator](https://github.com/vpokludova/projects/tree/main/code_evaluator)
