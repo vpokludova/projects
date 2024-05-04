@@ -34,3 +34,8 @@ Welcome to my projects repository! This repository contains various projects I'v
 adhere to camelCase naming conventions.
 - Technologies: Kotlin, JavaParser
 - Link [Code Evaluator](https://github.com/vpokludova/projects/tree/main/code_evaluator)
+
+7. LLM Python Corrector
+- Description: Corrects Python scripts using real-time error analysis and suggestions from OpenAI's API. Maintains a conversational context to improve the relevance and accuracy of code fixes.
+- Technologies: Kotlin, OpenAI API
+- Link [LLM Python Corrector](https://github.com/vpokludova/projects/tree/main/LLMPyCorrector)
