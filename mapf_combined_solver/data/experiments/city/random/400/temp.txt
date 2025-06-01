@@ -1,0 +1,76 @@
+Time: 68
+203: XXXXXXXXXXX.XXXXXX
+204: XXXXXXXXX..A.XXXXX
+205: XXXXXXXXXXA...XXXX
+206: XXXXXXXXX......XXX
+207: XXXXXXX..A......XX
+208: XXXXXXA..........X
+209: XXXXX.............
+210: XXXX.A1...........
+211: XXXA...2.........X
+212: XX.A..A.........XX
+213: ...............XXX
+214: X.............XXXX
+Right before the edge conflict. 
+Map looks fairly sparse with agents, so it shouldn't be a difficult conflict.
+
+Time: 69
+203: XXXXXXXXXXXAXXXXXX
+204: XXXXXXXXX.A..XXXXX
+205: XXXXXXXXXX....XXXX
+206: XXXXXXXXXA.....XXX
+207: XXXXXXX.........XX
+208: XXXXXX.A.........X
+209: XXXXX..C..........
+210: XXXX...C..........
+211: XXXAAAA..........X
+212: XX..............XX
+213: ...............XXX
+214: X.............XXXX
+Edge conflict occurs with some other agents in surrounding area making it slightly more difficult.
+
+Time: 71
+203: XXXXXXXXXXXAXXXXXX
+204: XXXXXXXXX....XXXXX
+205: XXXXXXXXXXA...XXXX
+206: XXXXXXXXX......XXX
+207: XXXXXXX.A.......XX
+208: XXXXXX.2.........X
+209: XXXXX.A.1.........
+210: XXXXAA............
+211: XXX..............X
+212: XX..A...........XX
+213: A..............XXX
+214: X....A........XXXX
+Two timesteps later, the agents in the conflict are separated and seem to be going different ways.
+
+Time: 73
+203: XXXXXXXXXXX.XXXXXX
+204: XXXXXXXXX..A.XXXXX
+205: XXXXXXXXXX....XXXX
+206: XXXXXXXXXA.....XXX
+207: XXXXXXX.B.......XX
+208: XXXXXX.A.........X
+209: XXXXXAA...........
+210: XXXX..............
+211: XXX..............X
+212: XX.A.A..........XX
+213: AAA............XXX
+214: X.............XXXX
+Two timesteps later, the agents collide again.
+
+Time: 79
+203: XXXXXXXXXXX.XXXXXX
+204: XXXXXXXXX..2.XXXXX
+205: XXXXXXXXXXA...XXXX
+206: XXXXXXXXXA.....XXX
+207: XXXXXXX..A......XX
+208: XXXXXX...........X
+209: XXXXX...A.........
+210: XXXXAA............
+211: XXXAA............X
+212: XX..............XX
+213: .A.............XXX
+214: X.............XXXX
+At the end of the allotted timesteps, the agents are still on the same path. The agents' destinations in the submap are the same position which cannot be solved without expanding the map and increasing the alloted time.
+

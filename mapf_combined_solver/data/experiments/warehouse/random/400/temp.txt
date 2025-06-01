@@ -1,0 +1,40 @@
+Time: 59
+43: XXXXXA.XXXXXXXXXX..XXX
+44: XXXXX..XXXXXXXXXX..XXX
+45: X..........A.....A...X
+46: B...........A....1A...
+47: XXXXX..XXXXXXXXXX..XXX
+48: XXXXX..XXXXXXXXXX..XXX
+At the beginning of the subproblem time window two of the three agents
+involved in the conflict are also in conflict (at position 'B'). This conflict
+is already unsolvable.
+
+Time: 69
+43: XXXXX.AXXXXXXXXXX..XXX
+44: XXXXX..XXXXXXXXXX..XXX
+45: X...........A........X
+46: ..........CC......AA..
+47: XXXXX..XXXXXXXXXX..XXX
+48: XXXXX..XXXXXXXXXX..XXX
+The edge conflict occurs much later, but on the entire route until here (for the 
+last 10 timesteps) agents 1 and 3 have been on the same path. 
+
+Time: 73
+43: XXXXX..XXXXXXXXXXA.XXX
+44: XXXXX..XXXXXXXXXX..XXX
+45: X.......A............X
+46: .......1......K.......
+47: XXXXX..XXXXXXXXXX..XXX
+48: XXXXX..XXXXXXXXXX..XXX
+Agents 1,3 and another agent collide at the position marked 'K'.
+
+Time: 79
+42: XXXX.....XXXXXXXX.XXXX
+43: XXXXX..XXXXXXXXXX..XXX
+44: XXXXX..XXXXXXXXXX..XXX
+45: XA...................X
+46: .1......A...........2.
+47: XXXXX..XXXXXXXXXX..XXX
+48: XXXXX..XXXXXXXXXX.3XXX
+At least at the end of the subproblem window each conflicting agent is on its own position. 
+But, unfortunately, the conflict cannot be saved unless we were to increase the map and/or the time window and therefore the start and goal positions of the conflicting agents. 

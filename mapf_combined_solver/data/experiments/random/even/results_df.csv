@@ -1,0 +1,6 @@
+,scenario_file,percentage_agents,conflicts_pre_solver,pos_conflicts_pre,edge_conflicts_pre,path_conflicts_pre,conflicts_post_solver,pos_conflicts_post,edge_conflicts_post,path_conflicts_post,unsolveable_pos_conflicts,unsolveable_edge_conflicts,unsolveable_path_conflicts,a_star_time,fixing_time,total_runtime,max_path_length_pre,max_path_length_post,total_retries,pos_retries,edge_retries,path_retries
+0,random-64-64-10-even-10.scen,100,103,86,15,2,0,0,0,0,0,0,0,0.27634763717651367,25.25411295890808,25.549601316452026,108,443,96,77,18,1
+0,random-64-64-10-even-10.scen,100,397,319,70,8,0,0,0,0,0,0,0,0.4799308776855469,152.99030089378357,153.51806783676147,108,1510,413,356,52,5
+0,random-64-64-10-even-10.scen,100,434,352,74,8,0,0,0,0,0,0,0,0.5299868583679199,172.1095290184021,172.6772644519806,108,1651,450,364,76,10
+0,random-64-64-10-even-10.scen,100,434,352,74,8,0,0,0,0,0,0,0,0.532975435256958,165.36655259132385,165.9553620815277,108,1651,450,364,76,10
+0,random-64-64-10-even-10.scen,100,434,352,74,8,0,0,0,0,0,0,0,0.46733713150024414,166.12360429763794,166.6451497077942,108,1651,450,364,76,10

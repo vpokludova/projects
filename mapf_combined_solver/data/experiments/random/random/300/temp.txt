@@ -1,0 +1,41 @@
+Time: 23
+17: XXXXXXXXXKXXXXXXXXXX
+18: XXXXXXXX...XXXXXXXXX
+19: XXXXXXX.....XXXXXXXX
+20: XXXXXXX.A..A.XXXXXXX
+21: XXXXX..A....X.XXXXXX
+22: XXXXXX........AXXXXX
+23: XXX............XXXXX
+24: XX.A......AA.A.X.XXX
+25: XXA..AAA..A.......XX
+26: ..A..A..X.......A..X
+27: XX....AA.A...A..A...
+28: X..A.AAA..X......X.X
+29: X.A....XAA.A....A.XX
+30: XX.A.......A..AA.XXX
+31: XXX.1.......X...XXXX
+32: XXXX....AA.XA..XXXXX
+33: XXXXX.....X.X.XXXXXX
+34: XXXXXX.....A.XXXXXXX
+35: XXXXXXX..A..XXXXXXXX
+36: XXXXXXXX...XXXXXXXXX
+37: XXXXXXXXX.XXXXXXXXXX
+
+At the very top, middle of the map, the position labeled as 'K' indicates that one of the agents 
+involved in the position conflicts (which occurs 10 timesteps later) is also in conflict with another
+agent. Unfortunately, this conflict is a path conflict, and actually this other agent follows agent 2
+for almost the entire path until it collides with agent 1. 
+
+Time: 33
+24: XX.AA.A......A.X.XXX
+25: XX.A..A..A........XX
+26: .A......X.A.AA....AX
+27: XX......ACA...A....A
+28: X..A....AAX.A...AXAX
+29: X......X...A......XX
+30: XXA....A.AA.A....XXX
+31: XXX.A.A...A.X...XXXX
+32: XXXX.....A.X...XXXXX
+
+Additionaly, it appears that at the time of the position conflict, the area surrounding the conflicting
+position is very dense with other agents which makes it very hard to stall. 

@@ -1,0 +1,38 @@
+Time: 10
+26: XXXXXXXXXXXXXXXXXXAXX
+27: XXXXXXXXXXXXXXXXXX1AX
+28: XXXXXXXXXXXXXXX.A..2.
+29: XXXXXXXXXXXX.....AAAX
+30: XXXXXXXXXXXX...A...XX
+31: X..AAAAA..A..XX..XXXX
+32: X.......AA...XX.XXXXX
+33: X.AXXXXXXXXXXXXXXXXXX
+Right before the path conflict. 
+It looks like there is another agent right behind Agent 1 which might be following it.
+
+Time: 11
+26: XXXXXXXXXXXXXXXXXX.XX
+27: XXXXXXXXXXXXXXXXXXAAX
+28: XXXXXXXXXXXXXXX...K.A
+29: XXXXXXXXXXXX..A.A.A.X
+30: XXXXXXXXXXXX....A..XX
+31: X..AA....AA..XX.AXXXX
+32: X...A..AAAA..XXAXXXXX
+33: X..XXXXXXXXXXXXXXXXXX
+Both agents collide with another agent in the first timestep of the path conflict.
+There are many other agents in surrounding positions.
+
+Time: 15
+26: XXXXXXXXXXXXXXXXXXAXX
+27: XXXXXXXXXXXXXXXXXX.AX
+28: XXXXXXXXXXXXXXXA.....
+29: XXXXXXXXXXXXA.AC.A..X
+30: XXXXXXXXXXXX...AA.AXX
+31: XA.....A..A.AXX.AXXXX
+32: XA..AAAAAAAA.XXAXXXXX
+33: X..XXXXXXXXXXXXXXXXXX
+In the last timestep of the path conflict the conflicting position is 
+surrounded (semi-closely) on all sides by other agents.
+
+
+

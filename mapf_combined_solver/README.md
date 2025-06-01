@@ -1,34 +1,68 @@
-# Multi-Agent Pathfinding: Combined Solver Approach
+# MAPF Solver
+
+![Animation Preview](./data/path_animation.gif)  
+*A visualization of agent movement before and after conflict resolution.*
 
 ## Overview
 
-Multi-Agent Pathfinding (MAPF) aims to find collision-free paths for multiple agents, ensuring no intersections or collisions occur. This challenge is critical in environments where autonomous entities operate simultaneously, such as robotics, video game development, and logistics. The combined solver strategy initially employs algorithms similar to A* for path creation. It identifies conflicts, attempting resolution with an optimal solver up to three times. If unresolved, the scenario is labeled unsolvable, maintaining a balance between solving speed and solution quality. Optimal resolutions are integrated back into the agent paths, iterating until all conflicts are resolved or deemed unsolvable.
+The **Multi-Agent Pathfinding (MAPF) Solver** computes collision-free paths for multiple agents in a shared, grid-based environment. This project combines a **fast, heuristic-driven approach** for initial path planning with a **local optimal solver** that resolves conflicts only where they occur.
 
-## Using `combined_solver.py`: Detailed Process
+By limiting the use of expensive global re-planning, this hybrid method scales better to complex environments and high agent counts—making it suitable for applications like autonomous robots, warehouse systems, or traffic simulations.
 
-### Configuration Options
+## How It Works
 
-All arguments are optional, each with a default setting ensuring immediate usability.
+1. **Initial Pathfinding**  
+   Agents independently compute their shortest paths using **A\*** or a **modified A\*** variant that discourages congestion by factoring in prior edge usage.
 
-- `-s`, `--scen-file`: Specifies the path to a scenario (*.scen*) file. A default scenario is included in the repository.
-- `-n`, `--number-agents`: Defines the number of agents to find paths for, defaulting to the first 30 agents.
-- `-m`, `--modified-search`: Toggles between modified A* (default, true) and classic A* for initial pathfinding. Modified A* aims to diversify paths by prioritizing unvisited vertices with equal heuristic and distance values.
-- `-t`, `--timeout`: Sets the maximum allowed time for solving, measured in seconds.
-- `-c`, `--concise`: Controls output verbosity. By default (false), it prints detailed visualizations of conflicts and unsolvable scenarios to the output.
+2. **Conflict Detection**  
+   The solver detects collisions such as:
+   - **Position conflicts** (two agents at the same cell)
+   - **Edge conflicts** (two agents crossing the same edge)
+   - **Path conflicts** (longer sequences of repeated interference)
 
-### Execution Flow
+3. **Local Conflict Resolution**  
+   Conflicts are encapsulated into **subproblems**, which are solved using an **external optimal solver** (via Picat). This allows precise conflict handling without re-solving the entire problem.
 
-1. **Initial Pathfinding:** Utilizes A* or modified A* for preliminary paths.
-   - Modified A* enhances path diversity by preferring less traveled vertices, detailed in `informed_search.py`.
-2. **Conflict Identification and Ordering:**
-   - Conflicts, categorized into edge, position, and path types, are detected and prioritized by occurrence time in `conflicts.py`.
-3. **Resolution Loop:** Repeats until a timeout or no resolvable conflicts remain.
-   - Early conflicts are tackled first, with repetitive unsolvable ones marked accordingly.
-   - A `Subproblem` instance encapsulates each conflict, tailoring the submap size and agent considerations based on conflict type and previous attempts.
-   - The optimal solver addresses the subproblem; successful resolutions update agent paths and conflict lists, while unresolved issues queue for reattempts.
+4. **Iteration Until Resolution**  
+   The solver dynamically reorders conflicts and escalates complexity when needed, re-solving only affected areas until all conflicts are resolved or the time limit is reached.
 
-### Note on the Optimal Solver Integration
+5. **Visualization**  
+   Agent movements can be animated before and after resolution to clearly show how conflicts were resolved.
 
-The `optimal_solver.py` uses an optimal solver in Picat, created by my supervisor. Unfortunately, I can't share this part publicly due to copyright and privacy reasons. Your understanding is appreciated.
+## Installation
+
+1. **Install Python Dependencies**
+
+```sh
+pip install -r requirements.txt
+```
+
+2. **Install Picat**
+
+Download Picat from [http://picat-lang.org/download.html](http://picat-lang.org/download.html) if not already downloaded.
+
+## Usage
+
+To run the MAPF solver:
+
+```sh
+python source/combined_solver.py -s path/to/scenario.scen -n 30 -m True -t 200
+```
+
+### Command-Line Options
+
+| Option | Description |
+|--------|-------------|
+| `-s`, `--scen-file` | Path to scenario file |
+| `-n`, `--number-agents` | Number of agents to use (-1 for all) |
+| `-m`, `--modified-search` | Use congestion-aware A* |
+| `-t`, `--timeout` | Max solver time in seconds |
+| `-c`, `--concise` | Use concise logging format |
+
+## Research Context
+
+This solver was developed for a thesis exploring whether **combining fast heuristic search with local optimal conflict resolution** can improve scalability and performance in large-scale multi-agent systems.
+
+The approach is tested across diverse map styles, sizes, and agent densities to evaluate how it compares to fully naive and fully optimal solvers in terms of both runtime and solution quality.
 
 

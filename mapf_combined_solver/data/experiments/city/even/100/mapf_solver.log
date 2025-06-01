@@ -1,0 +1,386 @@
+2025-03-31 20:54:07,427 - __main__ - INFO - Starting the MAPF solver program
+2025-03-31 20:54:07,429 - __main__ - DEBUG - Arguments received: Namespace(scen_file='Paris_1_256-even-9.scen', number_agents=100, percentage_agents=100, modified_search=True, timeout=900, concise=False)
+2025-03-31 20:54:07,456 - __main__ - INFO - Map and agent information loaded.
+2025-03-31 20:54:07,456 - __main__ - INFO - Using modified A* for pathfinding.
+2025-03-31 20:54:18,411 - __main__ - INFO - Non-optimal solver took 10.954793691635132 seconds to find initial paths for agents
+2025-03-31 20:54:18,523 - __main__ - INFO - Initial conflicts identified: 63
+2025-03-31 20:54:18,523 - __main__ - INFO - Initial number of position conflicts: 54
+2025-03-31 20:54:18,523 - __main__ - INFO - Initial number of edge conflicts: 6
+2025-03-31 20:54:18,523 - __main__ - INFO - Initial number of path conflicts: 3
+2025-03-31 20:54:18,523 - __main__ - INFO - Maximum agent path legnth after non-optimal solver: 562
+2025-03-31 20:54:18,652 - root - INFO - Created subproblem instance for conflict { position 64 [3, 46] (196, 16) }
+2025-03-31 20:54:18,742 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:18,823 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:18,823 - root - INFO - Retrying conflict { position 64 [3, 46] (196, 16) } for the 1 time
+2025-03-31 20:54:18,824 - root - INFO - Created subproblem instance for conflict { position 64 [3, 46] (196, 16) }
+2025-03-31 20:54:18,916 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:19,015 - root - INFO - Created subproblem instance for conflict { position 74 [3, 46] (193, 17) }
+2025-03-31 20:54:19,095 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:19,166 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:19,166 - root - INFO - Retrying conflict { position 74 [3, 46] (193, 17) } for the 1 time
+2025-03-31 20:54:19,166 - root - INFO - Created subproblem instance for conflict { position 74 [3, 46] (193, 17) }
+2025-03-31 20:54:19,259 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:19,347 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:19,348 - root - INFO - Created subproblem instance for conflict { position 92 [3, 46] (187, 20) }
+2025-03-31 20:54:19,422 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:19,494 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:19,494 - root - INFO - Retrying conflict { position 92 [3, 46] (187, 20) } for the 1 time
+2025-03-31 20:54:19,494 - root - INFO - Created subproblem instance for conflict { position 92 [3, 46] (187, 20) }
+2025-03-31 20:54:19,577 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:19,663 - root - INFO - Retrying conflict { position 74 [3, 46] (193, 17) } for the 2 time
+2025-03-31 20:54:19,664 - root - INFO - Created subproblem instance for conflict { position 74 [3, 46] (193, 17) }
+2025-03-31 20:54:19,770 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:19,857 - root - INFO - Created subproblem instance for conflict { path 24 [6, 8] [(162, 255), (163, 255), (164, 255), (165, 255), (166, 255), (166, 254), (167, 254), (167, 253), (168, 253), (169, 253), (170, 253), (170, 252), (171, 252), (171, 251), (171, 250), (172, 250), (172, 249), (173, 249), (174, 249), (174, 248), (175, 248), (175, 247), (176, 247), (176, 246), (176, 245), (177, 245), (177, 244), (177, 243), (177, 242), (178, 242), (178, 241), (178, 240), (178, 239), (178, 238), (178, 237)] }
+2025-03-31 20:54:19,973 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:20,098 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:20,099 - root - INFO - Retrying conflict { path 24 [6, 8] [(162, 255), (163, 255), (164, 255), (165, 255), (166, 255), (166, 254), (167, 254), (167, 253), (168, 253), (169, 253), (170, 253), (170, 252), (171, 252), (171, 251), (171, 250), (172, 250), (172, 249), (173, 249), (174, 249), (174, 248), (175, 248), (175, 247), (176, 247), (176, 246), (176, 245), (177, 245), (177, 244), (177, 243), (177, 242), (178, 242), (178, 241), (178, 240), (178, 239), (178, 238), (178, 237)] } for the 1 time
+2025-03-31 20:54:20,102 - root - INFO - Created subproblem instance for conflict { path 24 [6, 8] [(162, 255), (163, 255), (164, 255), (165, 255), (166, 255), (166, 254), (167, 254), (167, 253), (168, 253), (169, 253), (170, 253), (170, 252), (171, 252), (171, 251), (171, 250), (172, 250), (172, 249), (173, 249), (174, 249), (174, 248), (175, 248), (175, 247), (176, 247), (176, 246), (176, 245), (177, 245), (177, 244), (177, 243), (177, 242), (178, 242), (178, 241), (178, 240), (178, 239), (178, 238), (178, 237)] }
+2025-03-31 20:54:20,271 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:20,353 - root - INFO - Created subproblem instance for conflict { position 116 [3, 46] (181, 22) }
+2025-03-31 20:54:20,422 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:20,485 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:20,485 - root - INFO - Retrying conflict { position 116 [3, 46] (181, 22) } for the 1 time
+2025-03-31 20:54:20,485 - root - INFO - Created subproblem instance for conflict { position 116 [3, 46] (181, 22) }
+2025-03-31 20:54:20,559 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:20,644 - root - INFO - Created subproblem instance for conflict { position 132 [3, 46] (177, 25) }
+2025-03-31 20:54:20,723 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:20,789 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:20,789 - root - INFO - Retrying conflict { position 132 [3, 46] (177, 25) } for the 1 time
+2025-03-31 20:54:20,789 - root - INFO - Created subproblem instance for conflict { position 132 [3, 46] (177, 25) }
+2025-03-31 20:54:20,861 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:20,950 - root - INFO - Created subproblem instance for conflict { position 152 [3, 46] (173, 30) }
+2025-03-31 20:54:21,021 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:21,089 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:21,089 - root - INFO - Retrying conflict { position 152 [3, 46] (173, 30) } for the 1 time
+2025-03-31 20:54:21,090 - root - INFO - Created subproblem instance for conflict { position 152 [3, 46] (173, 30) }
+2025-03-31 20:54:21,165 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:21,259 - root - INFO - Created subproblem instance for conflict { position 164 [57, 79] (96, 123) }
+2025-03-31 20:54:21,334 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:21,396 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:21,396 - root - INFO - Retrying conflict { position 164 [57, 79] (96, 123) } for the 1 time
+2025-03-31 20:54:21,398 - root - INFO - Created subproblem instance for conflict { position 164 [57, 79] (96, 123) }
+2025-03-31 20:54:21,516 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:21,613 - root - INFO - Created subproblem instance for conflict { position 198 [15, 30] (129, 78) }
+2025-03-31 20:54:21,682 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:21,758 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:21,759 - root - INFO - Retrying conflict { position 198 [15, 30] (129, 78) } for the 1 time
+2025-03-31 20:54:21,759 - root - INFO - Created subproblem instance for conflict { position 198 [15, 30] (129, 78) }
+2025-03-31 20:54:21,841 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:21,945 - root - INFO - Created subproblem instance for conflict { position 220 [3, 46] (147, 37) }
+2025-03-31 20:54:22,021 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:22,079 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:22,079 - root - INFO - Retrying conflict { position 220 [3, 46] (147, 37) } for the 1 time
+2025-03-31 20:54:22,079 - root - INFO - Created subproblem instance for conflict { position 220 [3, 46] (147, 37) }
+2025-03-31 20:54:22,146 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:22,231 - root - INFO - Created subproblem instance for conflict { position 226 [2, 52] (95, 94) }
+2025-03-31 20:54:22,295 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:22,357 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:22,357 - root - INFO - Retrying conflict { position 226 [2, 52] (95, 94) } for the 1 time
+2025-03-31 20:54:22,357 - root - INFO - Created subproblem instance for conflict { position 226 [2, 52] (95, 94) }
+2025-03-31 20:54:22,429 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:22,487 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:22,487 - root - INFO - Created subproblem instance for conflict { position 236 [24, 79] (99, 155) }
+2025-03-31 20:54:22,555 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:22,634 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:22,634 - root - INFO - Retrying conflict { position 236 [24, 79] (99, 155) } for the 1 time
+2025-03-31 20:54:22,635 - root - INFO - Created subproblem instance for conflict { position 236 [24, 79] (99, 155) }
+2025-03-31 20:54:22,740 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:22,830 - root - INFO - Retrying conflict { position 226 [2, 52] (95, 94) } for the 2 time
+2025-03-31 20:54:22,831 - root - INFO - Created subproblem instance for conflict { position 226 [2, 52] (95, 94) }
+2025-03-31 20:54:22,904 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:22,996 - root - INFO - Created subproblem instance for conflict { position 236 [36, 67] (95, 153) }
+2025-03-31 20:54:23,065 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:23,133 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:23,133 - root - INFO - Retrying conflict { position 236 [36, 67] (95, 153) } for the 1 time
+2025-03-31 20:54:23,133 - root - INFO - Created subproblem instance for conflict { position 236 [36, 67] (95, 153) }
+2025-03-31 20:54:23,203 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:23,296 - root - INFO - Created subproblem instance for conflict { edge 237 [15, 32] ((124, 64), (125, 64)) }
+2025-03-31 20:54:23,372 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:23,441 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:23,441 - root - INFO - Retrying conflict { edge 237 [15, 32] ((124, 64), (125, 64)) } for the 1 time
+2025-03-31 20:54:23,442 - root - INFO - Created subproblem instance for conflict { edge 237 [15, 32] ((124, 64), (125, 64)) }
+2025-03-31 20:54:23,515 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:23,607 - root - INFO - Created subproblem instance for conflict { position 246 [3, 46] (140, 42) }
+2025-03-31 20:54:23,672 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:23,731 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:23,731 - root - INFO - Retrying conflict { position 246 [3, 46] (140, 42) } for the 1 time
+2025-03-31 20:54:23,731 - root - INFO - Created subproblem instance for conflict { position 246 [3, 46] (140, 42) }
+2025-03-31 20:54:23,817 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:23,917 - root - INFO - Created subproblem instance for conflict { edge 253 [12, 25] ((129, 83), (130, 83)) }
+2025-03-31 20:54:24,018 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:24,090 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:24,090 - root - INFO - Retrying conflict { edge 253 [12, 25] ((129, 83), (130, 83)) } for the 1 time
+2025-03-31 20:54:24,091 - root - INFO - Created subproblem instance for conflict { edge 253 [12, 25] ((129, 83), (130, 83)) }
+2025-03-31 20:54:24,185 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:24,281 - root - INFO - Created subproblem instance for conflict { position 254 [15, 97] (123, 58) }
+2025-03-31 20:54:24,366 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:24,432 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:24,432 - root - INFO - Retrying conflict { position 254 [15, 97] (123, 58) } for the 1 time
+2025-03-31 20:54:24,433 - root - INFO - Created subproblem instance for conflict { position 254 [15, 97] (123, 58) }
+2025-03-31 20:54:24,502 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:24,593 - root - INFO - Created subproblem instance for conflict { position 256 [70, 79] (103, 160) }
+2025-03-31 20:54:24,665 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:24,722 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:24,722 - root - INFO - Retrying conflict { position 256 [70, 79] (103, 160) } for the 1 time
+2025-03-31 20:54:24,723 - root - INFO - Created subproblem instance for conflict { position 256 [70, 79] (103, 160) }
+2025-03-31 20:54:24,802 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:24,895 - root - INFO - Created subproblem instance for conflict { position 258 [36, 56] (94, 162) }
+2025-03-31 20:54:24,968 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:25,032 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:25,032 - root - INFO - Retrying conflict { position 258 [36, 56] (94, 162) } for the 1 time
+2025-03-31 20:54:25,033 - root - INFO - Created subproblem instance for conflict { position 258 [36, 56] (94, 162) }
+2025-03-31 20:54:25,113 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:25,212 - root - INFO - Created subproblem instance for conflict { position 272 [3, 46] (135, 49) }
+2025-03-31 20:54:25,284 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:25,356 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:25,356 - root - INFO - Retrying conflict { position 272 [3, 46] (135, 49) } for the 1 time
+2025-03-31 20:54:25,356 - root - INFO - Created subproblem instance for conflict { position 272 [3, 46] (135, 49) }
+2025-03-31 20:54:25,452 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:25,547 - root - INFO - Created subproblem instance for conflict { position 278 [40, 57] (107, 78) }
+2025-03-31 20:54:25,618 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:25,682 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:25,683 - root - INFO - Retrying conflict { position 278 [40, 57] (107, 78) } for the 1 time
+2025-03-31 20:54:25,683 - root - INFO - Created subproblem instance for conflict { position 278 [40, 57] (107, 78) }
+2025-03-31 20:54:25,761 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:25,857 - root - INFO - Created subproblem instance for conflict { edge 283 [7, 53] ((105, 96), (106, 96)) }
+2025-03-31 20:54:25,933 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:26,002 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:26,002 - root - INFO - Retrying conflict { edge 283 [7, 53] ((105, 96), (106, 96)) } for the 1 time
+2025-03-31 20:54:26,003 - root - INFO - Created subproblem instance for conflict { edge 283 [7, 53] ((105, 96), (106, 96)) }
+2025-03-31 20:54:26,075 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:26,137 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:26,137 - root - INFO - Created subproblem instance for conflict { position 304 [39, 76] (177, 120) }
+2025-03-31 20:54:26,222 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:26,302 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:26,302 - root - INFO - Retrying conflict { position 304 [39, 76] (177, 120) } for the 1 time
+2025-03-31 20:54:26,303 - root - INFO - Created subproblem instance for conflict { position 304 [39, 76] (177, 120) }
+2025-03-31 20:54:26,391 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:26,485 - root - INFO - Retrying conflict { edge 283 [7, 53] ((105, 96), (106, 96)) } for the 2 time
+2025-03-31 20:54:26,487 - root - INFO - Created subproblem instance for conflict { edge 283 [7, 53] ((105, 96), (106, 96)) }
+2025-03-31 20:54:26,561 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:26,658 - root - INFO - Created subproblem instance for conflict { position 308 [10, 21] (141, 160) }
+2025-03-31 20:54:26,736 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:26,801 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:26,801 - root - INFO - Retrying conflict { position 308 [10, 21] (141, 160) } for the 1 time
+2025-03-31 20:54:26,801 - root - INFO - Created subproblem instance for conflict { position 308 [10, 21] (141, 160) }
+2025-03-31 20:54:26,888 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:26,974 - root - INFO - Created subproblem instance for conflict { position 312 [12, 45] (121, 63) }
+2025-03-31 20:54:27,052 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:27,132 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:27,133 - root - INFO - Retrying conflict { position 312 [12, 45] (121, 63) } for the 1 time
+2025-03-31 20:54:27,133 - root - INFO - Created subproblem instance for conflict { position 312 [12, 45] (121, 63) }
+2025-03-31 20:54:27,218 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:27,323 - root - INFO - Created subproblem instance for conflict { path 148 [6, 8] [(190, 222), (191, 222), (192, 222), (193, 222), (194, 222), (195, 222), (196, 222), (197, 222), (198, 222), (199, 222), (200, 222), (201, 222), (202, 222), (203, 222), (204, 222), (205, 222), (206, 222), (207, 222), (208, 222), (209, 222), (210, 222), (211, 222), (212, 222), (213, 222), (214, 222), (215, 222), (216, 222), (217, 222), (218, 222), (219, 222), (220, 222), (221, 222), (222, 222), (223, 222), (224, 222), (224, 221), (225, 221), (226, 221), (227, 221), (227, 220), (228, 220), (229, 220), (229, 219), (230, 219), (231, 219), (231, 218), (232, 218), (232, 217), (232, 216), (233, 216), (234, 216), (234, 215), (235, 215), (236, 215), (236, 214), (237, 214), (237, 213), (238, 213), (239, 213), (239, 212), (240, 212), (240, 211), (241, 211), (241, 210), (242, 210), (242, 209), (243, 209), (243, 208), (244, 208), (244, 207), (245, 207), (246, 207), (246, 206), (247, 206), (247, 205), (247, 204), (248, 204), (248, 203), (249, 203), (249, 202), (249, 201), (250, 201), (250, 200), (250, 199)] }
+2025-03-31 20:54:28,128 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:28,926 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:28,926 - root - INFO - Retrying conflict { path 148 [6, 8] [(190, 222), (191, 222), (192, 222), (193, 222), (194, 222), (195, 222), (196, 222), (197, 222), (198, 222), (199, 222), (200, 222), (201, 222), (202, 222), (203, 222), (204, 222), (205, 222), (206, 222), (207, 222), (208, 222), (209, 222), (210, 222), (211, 222), (212, 222), (213, 222), (214, 222), (215, 222), (216, 222), (217, 222), (218, 222), (219, 222), (220, 222), (221, 222), (222, 222), (223, 222), (224, 222), (224, 221), (225, 221), (226, 221), (227, 221), (227, 220), (228, 220), (229, 220), (229, 219), (230, 219), (231, 219), (231, 218), (232, 218), (232, 217), (232, 216), (233, 216), (234, 216), (234, 215), (235, 215), (236, 215), (236, 214), (237, 214), (237, 213), (238, 213), (239, 213), (239, 212), (240, 212), (240, 211), (241, 211), (241, 210), (242, 210), (242, 209), (243, 209), (243, 208), (244, 208), (244, 207), (245, 207), (246, 207), (246, 206), (247, 206), (247, 205), (247, 204), (248, 204), (248, 203), (249, 203), (249, 202), (249, 201), (250, 201), (250, 200), (250, 199)] } for the 1 time
+2025-03-31 20:54:28,930 - root - INFO - Created subproblem instance for conflict { path 148 [6, 8] [(190, 222), (191, 222), (192, 222), (193, 222), (194, 222), (195, 222), (196, 222), (197, 222), (198, 222), (199, 222), (200, 222), (201, 222), (202, 222), (203, 222), (204, 222), (205, 222), (206, 222), (207, 222), (208, 222), (209, 222), (210, 222), (211, 222), (212, 222), (213, 222), (214, 222), (215, 222), (216, 222), (217, 222), (218, 222), (219, 222), (220, 222), (221, 222), (222, 222), (223, 222), (224, 222), (224, 221), (225, 221), (226, 221), (227, 221), (227, 220), (228, 220), (229, 220), (229, 219), (230, 219), (231, 219), (231, 218), (232, 218), (232, 217), (232, 216), (233, 216), (234, 216), (234, 215), (235, 215), (236, 215), (236, 214), (237, 214), (237, 213), (238, 213), (239, 213), (239, 212), (240, 212), (240, 211), (241, 211), (241, 210), (242, 210), (242, 209), (243, 209), (243, 208), (244, 208), (244, 207), (245, 207), (246, 207), (246, 206), (247, 206), (247, 205), (247, 204), (248, 204), (248, 203), (249, 203), (249, 202), (249, 201), (250, 201), (250, 200), (250, 199)] }
+2025-03-31 20:54:29,780 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:29,876 - root - INFO - Created subproblem instance for conflict { position 322 [13, 40] (100, 92) }
+2025-03-31 20:54:29,952 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:30,031 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:30,032 - root - INFO - Retrying conflict { position 322 [13, 40] (100, 92) } for the 1 time
+2025-03-31 20:54:30,033 - root - INFO - Created subproblem instance for conflict { position 322 [13, 40] (100, 92) }
+2025-03-31 20:54:30,137 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:30,218 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:30,219 - root - INFO - Created subproblem instance for conflict { position 324 [10, 70] (134, 160) }
+2025-03-31 20:54:30,292 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:30,347 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:30,348 - root - INFO - Retrying conflict { position 324 [10, 70] (134, 160) } for the 1 time
+2025-03-31 20:54:30,348 - root - INFO - Created subproblem instance for conflict { position 324 [10, 70] (134, 160) }
+2025-03-31 20:54:30,422 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:30,493 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:30,493 - root - INFO - Created subproblem instance for conflict { position 326 [45, 57] (120, 68) }
+2025-03-31 20:54:30,571 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:30,633 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:30,633 - root - INFO - Retrying conflict { position 326 [45, 57] (120, 68) } for the 1 time
+2025-03-31 20:54:30,634 - root - INFO - Created subproblem instance for conflict { position 326 [45, 57] (120, 68) }
+2025-03-31 20:54:30,707 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:30,799 - root - INFO - Retrying conflict { position 322 [13, 40] (100, 92) } for the 2 time
+2025-03-31 20:54:30,800 - root - INFO - Created subproblem instance for conflict { position 322 [13, 40] (100, 92) }
+2025-03-31 20:54:30,869 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:30,967 - root - INFO - Retrying conflict { position 324 [10, 70] (134, 160) } for the 2 time
+2025-03-31 20:54:30,969 - root - INFO - Created subproblem instance for conflict { position 324 [10, 70] (134, 160) }
+2025-03-31 20:54:31,045 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:31,160 - root - INFO - Created subproblem instance for conflict { position 338 [57, 83] (120, 63) }
+2025-03-31 20:54:31,245 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:31,328 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:31,328 - root - INFO - Retrying conflict { position 338 [57, 83] (120, 63) } for the 1 time
+2025-03-31 20:54:31,328 - root - INFO - Created subproblem instance for conflict { position 338 [57, 83] (120, 63) }
+2025-03-31 20:54:31,429 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:31,565 - root - INFO - Created subproblem instance for conflict { position 344 [6, 8] (249, 186) }
+2025-03-31 20:54:31,684 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:31,829 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:31,829 - root - INFO - Retrying conflict { position 344 [6, 8] (249, 186) } for the 1 time
+2025-03-31 20:54:31,830 - root - INFO - Created subproblem instance for conflict { position 344 [6, 8] (249, 186) }
+2025-03-31 20:54:31,938 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:32,007 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:32,007 - root - INFO - Created subproblem instance for conflict { position 350 [6, 8] (248, 184) }
+2025-03-31 20:54:32,079 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:32,155 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:32,163 - root - INFO - Retrying conflict { position 350 [6, 8] (248, 184) } for the 1 time
+2025-03-31 20:54:32,164 - root - INFO - Created subproblem instance for conflict { position 350 [6, 8] (248, 184) }
+2025-03-31 20:54:32,264 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:32,331 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:32,331 - root - INFO - Created subproblem instance for conflict { position 354 [6, 8] (247, 183) }
+2025-03-31 20:54:32,398 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:32,461 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:32,461 - root - INFO - Retrying conflict { position 354 [6, 8] (247, 183) } for the 1 time
+2025-03-31 20:54:32,461 - root - INFO - Created subproblem instance for conflict { position 354 [6, 8] (247, 183) }
+2025-03-31 20:54:32,531 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:32,626 - root - INFO - Retrying conflict { position 344 [6, 8] (249, 186) } for the 2 time
+2025-03-31 20:54:32,627 - root - INFO - Created subproblem instance for conflict { position 344 [6, 8] (249, 186) }
+2025-03-31 20:54:32,699 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:32,799 - root - INFO - Created subproblem instance for conflict { edge 373 [21, 80] ((166, 166), (167, 166)) }
+2025-03-31 20:54:32,908 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:33,000 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:33,000 - root - INFO - Retrying conflict { edge 373 [21, 80] ((166, 166), (167, 166)) } for the 1 time
+2025-03-31 20:54:33,001 - root - INFO - Created subproblem instance for conflict { edge 373 [21, 80] ((166, 166), (167, 166)) }
+2025-03-31 20:54:33,087 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:33,155 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:33,156 - root - INFO - Created subproblem instance for conflict { position 410 [36, 73] (95, 189) }
+2025-03-31 20:54:33,221 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:33,289 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:33,289 - root - INFO - Retrying conflict { position 410 [36, 73] (95, 189) } for the 1 time
+2025-03-31 20:54:33,289 - root - INFO - Created subproblem instance for conflict { position 410 [36, 73] (95, 189) }
+2025-03-31 20:54:33,389 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:33,511 - root - INFO - Retrying conflict { edge 373 [21, 80] ((166, 166), (167, 166)) } for the 2 time
+2025-03-31 20:54:33,512 - root - INFO - Created subproblem instance for conflict { edge 373 [21, 80] ((166, 166), (167, 166)) }
+2025-03-31 20:54:33,591 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:33,692 - root - INFO - Created subproblem instance for conflict { position 430 [1, 53] (53, 78) }
+2025-03-31 20:54:33,768 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:33,833 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:33,834 - root - INFO - Retrying conflict { position 430 [1, 53] (53, 78) } for the 1 time
+2025-03-31 20:54:33,834 - root - INFO - Created subproblem instance for conflict { position 430 [1, 53] (53, 78) }
+2025-03-31 20:54:33,903 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:34,003 - root - INFO - Created subproblem instance for conflict { position 434 [23, 85] (157, 207) }
+2025-03-31 20:54:34,071 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:34,135 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:34,135 - root - INFO - Retrying conflict { position 434 [23, 85] (157, 207) } for the 1 time
+2025-03-31 20:54:34,135 - root - INFO - Created subproblem instance for conflict { position 434 [23, 85] (157, 207) }
+2025-03-31 20:54:34,201 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:34,303 - root - INFO - Created subproblem instance for conflict { position 438 [32, 50] (154, 134) }
+2025-03-31 20:54:34,370 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:34,435 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:34,435 - root - INFO - Retrying conflict { position 438 [32, 50] (154, 134) } for the 1 time
+2025-03-31 20:54:34,436 - root - INFO - Created subproblem instance for conflict { position 438 [32, 50] (154, 134) }
+2025-03-31 20:54:34,510 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:34,606 - root - INFO - Created subproblem instance for conflict { position 460 [37, 66] (147, 154) }
+2025-03-31 20:54:34,688 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:34,769 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:34,769 - root - INFO - Retrying conflict { position 460 [37, 66] (147, 154) } for the 1 time
+2025-03-31 20:54:34,769 - root - INFO - Created subproblem instance for conflict { position 460 [37, 66] (147, 154) }
+2025-03-31 20:54:34,889 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:34,994 - root - INFO - Created subproblem instance for conflict { position 488 [7, 37] (147, 154) }
+2025-03-31 20:54:35,062 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:35,130 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:35,130 - root - INFO - Retrying conflict { position 488 [7, 37] (147, 154) } for the 1 time
+2025-03-31 20:54:35,131 - root - INFO - Created subproblem instance for conflict { position 488 [7, 37] (147, 154) }
+2025-03-31 20:54:35,241 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:35,362 - root - INFO - Created subproblem instance for conflict { position 502 [7, 11] (153, 154) }
+2025-03-31 20:54:35,434 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:35,502 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:35,502 - root - INFO - Retrying conflict { position 502 [7, 11] (153, 154) } for the 1 time
+2025-03-31 20:54:35,504 - root - INFO - Created subproblem instance for conflict { position 502 [7, 11] (153, 154) }
+2025-03-31 20:54:35,611 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:35,733 - root - INFO - Created subproblem instance for conflict { position 516 [11, 37] (147, 154) }
+2025-03-31 20:54:35,794 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:35,851 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:35,851 - root - INFO - Retrying conflict { position 516 [11, 37] (147, 154) } for the 1 time
+2025-03-31 20:54:35,852 - root - INFO - Created subproblem instance for conflict { position 516 [11, 37] (147, 154) }
+2025-03-31 20:54:35,928 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:36,027 - root - INFO - Created subproblem instance for conflict { position 536 [42, 53] (42, 37) }
+2025-03-31 20:54:36,106 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:36,170 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:36,170 - root - INFO - Retrying conflict { position 536 [42, 53] (42, 37) } for the 1 time
+2025-03-31 20:54:36,171 - root - INFO - Created subproblem instance for conflict { position 536 [42, 53] (42, 37) }
+2025-03-31 20:54:36,247 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:36,362 - root - INFO - Created subproblem instance for conflict { edge 547 [11, 83] ((138, 148), (138, 149)) }
+2025-03-31 20:54:36,440 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:36,505 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:36,505 - root - INFO - Retrying conflict { edge 547 [11, 83] ((138, 148), (138, 149)) } for the 1 time
+2025-03-31 20:54:36,505 - root - INFO - Created subproblem instance for conflict { edge 547 [11, 83] ((138, 148), (138, 149)) }
+2025-03-31 20:54:36,581 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:36,703 - root - INFO - Created subproblem instance for conflict { position 578 [58, 87] (178, 163) }
+2025-03-31 20:54:36,777 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:36,839 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:36,840 - root - INFO - Retrying conflict { position 578 [58, 87] (178, 163) } for the 1 time
+2025-03-31 20:54:36,841 - root - INFO - Created subproblem instance for conflict { position 578 [58, 87] (178, 163) }
+2025-03-31 20:54:36,915 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:37,015 - root - INFO - Created subproblem instance for conflict { position 588 [6, 94] (156, 161) }
+2025-03-31 20:54:37,098 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:37,166 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:37,167 - root - INFO - Retrying conflict { position 588 [6, 94] (156, 161) } for the 1 time
+2025-03-31 20:54:37,167 - root - INFO - Created subproblem instance for conflict { position 588 [6, 94] (156, 161) }
+2025-03-31 20:54:37,248 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:37,394 - root - INFO - Created subproblem instance for conflict { edge 595 [8, 95] ((152, 162), (153, 162)) }
+2025-03-31 20:54:37,490 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:37,602 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:37,602 - root - INFO - Retrying conflict { edge 595 [8, 95] ((152, 162), (153, 162)) } for the 1 time
+2025-03-31 20:54:37,602 - root - INFO - Created subproblem instance for conflict { edge 595 [8, 95] ((152, 162), (153, 162)) }
+2025-03-31 20:54:37,675 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:37,744 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:37,745 - root - INFO - Created subproblem instance for conflict { position 648 [87, 95] (178, 163) }
+2025-03-31 20:54:37,819 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:37,883 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:37,883 - root - INFO - Retrying conflict { position 648 [87, 95] (178, 163) } for the 1 time
+2025-03-31 20:54:37,883 - root - INFO - Created subproblem instance for conflict { position 648 [87, 95] (178, 163) }
+2025-03-31 20:54:37,959 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:38,068 - root - INFO - Retrying conflict { edge 595 [8, 95] ((152, 162), (153, 162)) } for the 2 time
+2025-03-31 20:54:38,068 - root - INFO - Created subproblem instance for conflict { edge 595 [8, 95] ((152, 162), (153, 162)) }
+2025-03-31 20:54:38,145 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:38,258 - root - INFO - Created subproblem instance for conflict { position 652 [17, 86] (144, 51) }
+2025-03-31 20:54:38,335 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:38,406 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:38,406 - root - INFO - Retrying conflict { position 652 [17, 86] (144, 51) } for the 1 time
+2025-03-31 20:54:38,407 - root - INFO - Created subproblem instance for conflict { position 652 [17, 86] (144, 51) }
+2025-03-31 20:54:38,482 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:38,601 - root - INFO - Created subproblem instance for conflict { position 656 [87, 95] (178, 163) }
+2025-03-31 20:54:38,676 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:38,797 - root - INFO - Created subproblem instance for conflict { position 668 [89, 99] (89, 174) }
+2025-03-31 20:54:38,869 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:38,930 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:38,931 - root - INFO - Retrying conflict { position 668 [89, 99] (89, 174) } for the 1 time
+2025-03-31 20:54:38,931 - root - INFO - Created subproblem instance for conflict { position 668 [89, 99] (89, 174) }
+2025-03-31 20:54:39,019 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:39,153 - root - INFO - Created subproblem instance for conflict { position 690 [56, 57] (174, 27) }
+2025-03-31 20:54:39,224 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:39,293 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:39,293 - root - INFO - Retrying conflict { position 690 [56, 57] (174, 27) } for the 1 time
+2025-03-31 20:54:39,293 - root - INFO - Created subproblem instance for conflict { position 690 [56, 57] (174, 27) }
+2025-03-31 20:54:39,367 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:39,488 - root - INFO - Created subproblem instance for conflict { position 698 [27, 46] (74, 83) }
+2025-03-31 20:54:39,582 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:39,647 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:39,647 - root - INFO - Retrying conflict { position 698 [27, 46] (74, 83) } for the 1 time
+2025-03-31 20:54:39,648 - root - INFO - Created subproblem instance for conflict { position 698 [27, 46] (74, 83) }
+2025-03-31 20:54:39,736 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:39,899 - root - INFO - Created subproblem instance for conflict { position 742 [20, 58] (240, 182) }
+2025-03-31 20:54:40,013 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:40,167 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:40,167 - root - INFO - Retrying conflict { position 742 [20, 58] (240, 182) } for the 1 time
+2025-03-31 20:54:40,168 - root - INFO - Created subproblem instance for conflict { position 742 [20, 58] (240, 182) }
+2025-03-31 20:54:40,316 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:40,436 - root - INFO - Created subproblem instance for conflict { position 802 [70, 84] (194, 224) }
+2025-03-31 20:54:40,499 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:40,566 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:40,566 - root - INFO - Retrying conflict { position 802 [70, 84] (194, 224) } for the 1 time
+2025-03-31 20:54:40,566 - root - INFO - Created subproblem instance for conflict { position 802 [70, 84] (194, 224) }
+2025-03-31 20:54:40,633 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:40,763 - root - INFO - Created subproblem instance for conflict { position 806 [20, 91] (240, 182) }
+2025-03-31 20:54:40,836 - root - INFO - Optimal solver was not successful the first time
+2025-03-31 20:54:40,903 - root - INFO - Optimal solver was not successful the second time
+2025-03-31 20:54:40,903 - root - INFO - Retrying conflict { position 806 [20, 91] (240, 182) } for the 1 time
+2025-03-31 20:54:40,903 - root - INFO - Created subproblem instance for conflict { position 806 [20, 91] (240, 182) }
+2025-03-31 20:54:41,000 - root - INFO - Optimal solver was successful
+2025-03-31 20:54:41,127 - __main__ - INFO - Fixing conflicts took 22.603724002838135 seconds
+2025-03-31 20:54:41,127 - __main__ - INFO - Total combined solver runtime is 33.670287132263184 seconds
+2025-03-31 20:54:41,127 - __main__ - INFO - Number of conflicts at termination: 0
+2025-03-31 20:54:41,127 - __main__ - INFO - Number of unsolveable conflicts at termination: 0
+2025-03-31 20:54:41,127 - __main__ - INFO - Maximum agent path legnth after optimal solver: 749
+2025-03-31 20:54:41,129 - __main__ - INFO - Number of position conflicts post solver: 0
+2025-03-31 20:54:41,129 - __main__ - INFO - Number of edge conflicts post solver: 0
+2025-03-31 20:54:41,129 - __main__ - INFO - Number of path conflicts post solver: 0
+2025-03-31 20:54:41,130 - __main__ - INFO - Number of 'unsolveable' position conflicts post solver: 0
+2025-03-31 20:54:41,130 - __main__ - INFO - Number of 'unsolveable' edge conflicts post solver: 0
+2025-03-31 20:54:41,130 - __main__ - INFO - Number of 'unsolveable' path conflicts post solver: 0
